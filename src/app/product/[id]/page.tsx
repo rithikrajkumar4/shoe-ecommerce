@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
-const page = () => {
+const Page = () => {
   const [imgNo, setImgNo] = useState(0);
+
   function decrementImage() {
     const N = productDetail.images.length;
     if (imgNo == 0) setImgNo(8);
@@ -125,4 +126,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
