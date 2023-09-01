@@ -50,7 +50,7 @@ export default function CarouselComponent() {
             <p className="text-4xl  text-center my-4 font-bold uppercase">
               Shoes of the year
             </p>
-            <p className="text-center text-[#df265a] italic text-xl font-mono ">
+            <p className="text-center text-[#df265a] italic text-xl font-mono m-4 ">
               Maybe it’s the iconic connection to Jordan Brand heritage, as
               close to a bloodline as a colorway can get. Or maybe they just
               look really good together.
