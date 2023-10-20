@@ -17,7 +17,7 @@ export default function CarouselComponent() {
             </p>
           </div>
           <Image
-            className="absolute z-1 p-4  -rotate-45 mx-[30%]"
+            className="absolute z-1 p-4 hover:scale-110 hover:z-50 hover:rotate-0  -rotate-45 mx-[30%]"
             src={"/air-jordan.png"}
             width={900}
             height={900}
@@ -46,11 +46,11 @@ export default function CarouselComponent() {
           </div>
         </div>
         <div className="z-10 flex justify-evenly">
-          <div className=" z-10 w-[20%] mr-16">
+          <div className=" z-10 w-[40%] mr-16">
             <p className="text-4xl  text-center my-4 font-bold uppercase">
               Shoes of the year
             </p>
-            <p className="text-center text-[#df265a] italic text-xl font-mono m-4 ">
+            <p className="text-center text-[#df265a] italic text-xl font-mono font-semibold m-4 ">
               Maybe it’s the iconic connection to Jordan Brand heritage, as
               close to a bloodline as a colorway can get. Or maybe they just
               look really good together.
