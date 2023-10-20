@@ -35,7 +35,9 @@ const Header = () => {
       <div className="flex items-center gap-12 text-3xl">
         <BsSearch />
         <BsCart />
-        <FaRegUserCircle />
+        <Link href={"/auth/signup"} className="cursor-pointer">
+          <FaRegUserCircle />
+        </Link>
       </div>
     </div>
   );

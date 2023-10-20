@@ -47,8 +47,8 @@ const Page = () => {
     },
   };
   return (
-    <div className="flex justify-center font-mono">
-      <div className="flex flex-col h-[60vh] overflow-scroll">
+    <div className="flex flex-col xl:flex-row justify-center font-mono">
+      <div className="flex xl:flex-col xl:h-[70vh] overflow-scroll">
         {productDetail.images.map((item, index) => {
           return (
             <Image
@@ -60,12 +60,12 @@ const Page = () => {
               src={`/${item}`}
               alt={`${productDetail.title}-${index}`}
               width={100}
-              height={200}
+              height={100}
             />
           );
         })}
       </div>
-      <div>
+      <div className="flex flex-col items-center">
         <Image
           src={`/${productDetail.images[imgNo]}`}
           alt={productDetail.title}
@@ -85,10 +85,14 @@ const Page = () => {
         <h6 className="uppercase text-center text-2xl font-bold m-4">
           {productDetail.type}
         </h6>
-        <h1 className="text-center text-3xl m-4">{productDetail.title}</h1>
-        <h2 className="text-4xl font-bold ml-10">${productDetail.price}</h2>
+        <h1 className="text-center text-xl xl:text-3xl m-4">
+          {productDetail.title}
+        </h1>
+        <h2 className="text-4xl text-center font-bold ml-10">
+          ${productDetail.price}
+        </h2>
         <div>
-          <h2 className="text-center text-4xl">Sizes Availabel:</h2>
+          <h2 className="text-center text-xl xl:text-3xl">Sizes Available:</h2>
           <div className="flex justify-center">
             <div className="flex justify-center text-white flex-wrap w-[70%]">
               <h2 className="m-4 bg-black text-2xl h-[42px] w-[120px] text-center pt-1.5 font-bold rounded-full">
@@ -109,11 +113,11 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="text-center text-xl w-[700px] m-4">
+        <div className="text-center text-xl xl:w-[700px] m-4">
           <span className="text-3xl font-bold">Description:</span>
           {productDetail.desc}
         </div>
-        <div className="flex">
+        <div className="flex justify-center">
           <button className="m-4 p-4 bg-black text-white ml-10 hover:bg-gray-600 text-2xl ">
             Add to Cart
           </button>
